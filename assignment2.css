@@ -1,0 +1,117 @@
+/* ===== General Page Styling ===== */
+body {
+  font-family: Arial, sans-serif;     /* Font style */
+  margin: 0;                          /* Remove default margin */
+  padding: 0;
+  line-height: 1.6;                   /* Improve readability */
+  background-color: #d59ecf;          /* Hex color format */
+}
+
+/* ===== Header & Footer ===== */
+header, footer {
+  background-color: rgb(228, 123, 204); /* RGB color format */
+  color: white;
+  text-align: left;
+  padding: 1rem;                      /* Box model: padding inside */
+  margin-bottom: 1rem;                /* Margin outside */
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+/* ===== Sections (Cards) ===== */
+section {
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect */
+  max-width: 800px;                        /* Keep sections centered */
+}
+
+/* ===== Bio Text ===== */
+.bio p {
+  color: hsl(240, 4%, 5%); /* HSL color format */
+  font-size: 1rem;
+}
+
+/* ===== Skills List ===== */
+.skills ul {
+  list-style: square;      /* Custom bullets */
+  margin-left: 20px;
+}
+
+.skills li {
+  padding: 0.3em 0;        /* Box model: spacing inside */
+}
+
+/* ===== Table Styling ===== */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove double borders */
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;             /* Padding inside cells */
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;      /* Alternating row colors */
+}
+
+/* ===== Contact Form ===== */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Hover & Focus Effects */
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #86228b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #006400;   /* Darker green on hover */
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid dodgerblue; /* Focus outline */
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;  /* Smaller text on mobile */
+  }
+
+  section {
+    width: 95%;       /* Sections shrink to fit */
+  }
+
+  form {
+    width: 95%;
+  }
+}
